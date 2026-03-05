@@ -4,6 +4,7 @@ This is an agentic code kata to create a software application for Phil's Quick L
 
 *NOTE: This kata is based on the real-world case study from [The Basics of Process Mapping, 2nd Edition](https://www.taylorfrancis.com/books/mono/10.4324/9781439891278/basics-process-mapping-robert-damelio) and is designed to practice modern AI-assisted software development workflows.*
 
+*ADDITIONAL NOTE: The workflow describe here is based on Boris Tane's blog post [How I Use Claude Code](https://boristane.com/blog/how-i-use-claude-code/). Your milage may vary.*
 
 ## 1. Purpose
 
@@ -152,7 +153,7 @@ If the agent's understanding is wrong, everything built on that understanding wi
 
 4. **Request Updates**: Tell the agent to update RESEARCH.md to address all your notes:
    ```
-   Please update RESEARCH.md to address all inline corrections and notes.
+   Please update RESEARCH.md to address all inline responses, corrections, and notes.
    ```
 
 5. **Iterate Until Correct**: Repeat steps 2-4 until RESEARCH.md accurately reflects the business domain and requirements. **Do not proceed to planning until research is solid.**
