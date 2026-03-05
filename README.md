@@ -335,11 +335,6 @@ Rather than trying to explain corrections in chat (where context can be lost), y
 
 5. **Iterate Until Aligned**: Repeat steps 1-4 as many times as needed. **This is not a one-pass process.** Often it takes 2-5 annotation cycles to get the plan completely correct.
 
-6. **Grant Approval**: When the plan fully matches your intent:
-   ```
-   PLAN.md looks good. Approved to implement.
-   ```
-
 ### The Power of This Cycle
 
 This workflow puts **creative decision-making in the planning phase** where it belongs. By the time you approve the plan:
