@@ -119,7 +119,6 @@ If the agent's understanding is wrong, everything built on that understanding wi
    Read the following files thoroughly:
    - KATA_DESCRIPTION.md (business narrative and problems)
    - AGENTS.md (technical specifications and business rules)
-   - PRD.md (detailed functional requirements)
    
    Write your findings to a file named RESEARCH.md that includes:
    
@@ -651,7 +650,7 @@ Let's begin the Phil's Quick Lube Management System kata.
 
 First, execute the Research Step as described in README.md section 4.
 
-Read KATA_DESCRIPTION.md, AGENTS.md, and PRD.md thoroughly, then write
+Read KATA_DESCRIPTION.md and AGENTS.md thoroughly, then write
 your findings to RESEARCH.md. Include business context, core entities,
 critical business rules, technical constraints, success metrics, and
 any open questions.
