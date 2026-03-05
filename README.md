@@ -90,39 +90,6 @@ You can complete the entire system or focus on specific phases based on your lea
 
 4. **Open AI Chat**: In VS Code, open the GitHub Copilot Chat panel (usually with `Cmd+Shift+I` or `Ctrl+Shift+I`).
 
-### Manual CLI Testing
-
-Run the interactive CLI to manually test core workflows (create order, start service,
-complete service, generate invoice, process payment):
-
-```bash
-python -m src.cli
-```
-
-**Quick validation with automated happy path demo:**
-
-```bash
-python -m src.cli --demo
-```
-
-This non-interactive mode creates a test customer/vehicle, creates an oil change order,
-approves it, starts service, completes service, generates invoice, and processes payment—all
-in one automated flow. Perfect for quick smoke testing after changes.
-
-You can optionally override the default SQLite database location (`data/pqlms.db`) with:
-
-```bash
-PQLMS_DB_URL="sqlite:///data/my-test.db" python -m src.cli
-```
-
-If you install the project in editable mode, you can also use the script entrypoint:
-
-```bash
-pip install -e .
-pqlms         # interactive mode
-pqlms --demo  # automated demo
-```
-
 ### Working with GitHub Copilot Agents
 
 This kata uses GitHub Copilot's agent capabilities in VS Code. The agent can:
@@ -440,6 +407,39 @@ As the agent implements:
 2. **Run Tests Yourself**: Periodically run `pytest` to verify functionality
 3. **Test Manually**: Try the code paths yourself (create a customer, create a service order, etc.)
 4. **Check Errors**: Use VS Code's Problems panel to catch type errors or lint issues
+
+### Manual CLI Testing
+
+Run the interactive CLI to manually test core workflows (create order, start service,
+complete service, generate invoice, process payment):
+
+```bash
+python -m src.cli
+```
+
+**Quick validation with automated happy path demo:**
+
+```bash
+python -m src.cli --demo
+```
+
+This non-interactive mode creates a test customer/vehicle, creates an oil change order,
+approves it, starts service, completes service, generates invoice, and processes payment—all
+in one automated flow. Perfect for quick smoke testing after changes.
+
+You can optionally override the default SQLite database location (`data/pqlms.db`) with:
+
+```bash
+PQLMS_DB_URL="sqlite:///data/my-test.db" python -m src.cli
+```
+
+If you install the project in editable mode, you can also use the script entrypoint:
+
+```bash
+pip install -e .
+pqlms         # interactive mode
+pqlms --demo  # automated demo
+```
 
 ### How to Provide Corrections
 
